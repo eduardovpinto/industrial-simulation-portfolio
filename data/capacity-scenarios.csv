@@ -1,0 +1,45 @@
+layout,availability_scenario,pallets,annual_capacity_thousand_units
+Original layout,H1,20,258.92892
+Original layout,H1,22,277.98867
+Original layout,H1,24,291.71169
+Original layout,H1,26,299.60154
+Original layout,H1,28,302.88159
+Original layout,H1,30,303.25392
+Original layout,H1,32,300.93129
+Original layout,H1,34,297.04842
+Original layout,H1,36,287.88201
+Original layout,H1,38,272.01366
+Original layout,H1,40,256.78359
+Leak Test Moved,H1,20,270.09882
+Leak Test Moved,H1,22,287.61606
+Leak Test Moved,H1,24,298.50228
+Leak Test Moved,H1,26,302.58018
+Leak Test Moved,H1,28,300.3462
+Leak Test Moved,H1,30,294.19389
+Leak Test Moved,H1,32,286.80048
+Leak Test Moved,H1,34,275.98518
+Leak Test Moved,H1,36,268.4322
+Leak Test Moved,H1,38,266.60601
+Leak Test Moved,H1,40,255.59568
+Original layout,H2,20,240.09966
+Original layout,H2,22,255.06378
+Original layout,H2,24,266.28687
+Original layout,H2,26,273.59163
+Original layout,H2,28,277.03125
+Original layout,H2,30,278.21916
+Original layout,H2,32,277.74045
+Original layout,H2,34,273.41433
+Original layout,H2,36,263.25504
+Original layout,H2,38,249.83343
+Original layout,H2,40,237.83022
+Leak Test Moved,H2,20,248.0427
+Leak Test Moved,H2,22,261.35793
+Leak Test Moved,H2,24,270.09882
+Leak Test Moved,H2,26,273.14838
+Leak Test Moved,H2,28,272.8647
+Leak Test Moved,H2,30,269.30097
+Leak Test Moved,H2,32,261.10971
+Leak Test Moved,H2,34,252.81207
+Leak Test Moved,H2,36,248.61006
+Leak Test Moved,H2,38,241.02162
+Leak Test Moved,H2,40,232.74171
