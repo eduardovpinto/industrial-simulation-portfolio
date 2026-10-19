@@ -1,43 +1,57 @@
 # Industrial Simulation Portfolio
 
-**Eduardo Pinto · Production capacity, material flow and scenario analysis**
+**Eduardo Pinto | WITNESS / Twinn WITNESS | Production capacity and material flow**
 
-Industrial simulation studies developed in **WITNESS 26**, with Excel used to organise process inputs and compare results. The work presented here covers model development, data preparation, experiment design and analysis of operational alternatives.
+I use discrete-event simulation to investigate industrial operating decisions before changes are made to a production system. This portfolio presents the questions studied, the alternatives compared, the available results and the conditions behind the recommendations.
 
-The aim is to support decisions about how a production system should operate: how much it can produce, how many pallets should circulate and what changes when a station or an operating assumption is altered.
+## Featured case study: pallet sizing and layout comparison
 
-## Featured Case Study
+**Decision:** how many pallets should circulate through an assembly line, and how does the answer change when the leak-test station is relocated?
 
-### Pallet Sizing and Layout Comparison for an Assembly Line
+The study compares **two layouts**, **two equipment availability assumptions** and **eleven pallet quantities**. It illustrates why layout and pallet quantity should be assessed together.
 
-Two layouts, two equipment availability assumptions and eleven pallet quantities were compared. The highest reported capacity occurred with **30 pallets in the original layout** and **26 with the leak test station relocated**.
+| Reported comparison | Original layout | Relocated layout |
+|---|---:|---:|
+| Pallets associated with the highest tested output under both availability assumptions | 30 | 26 |
+| Peak output change relative to the original layout under H1 | Reference | −0.22% |
+| Peak output change relative to the original layout under H2 | Reference | −1.82% |
 
-The alternative used four fewer pallets at its peak, with estimated annual output **0.22% lower under H1** and **1.82% lower under H2**. The study supported a pallet recommendation for either layout; the relocation decision remained with the company.
+H1 and H2 are the higher- and lower-availability assumptions defined in the case study. Each peak comparison allows the layouts to use their own best tested pallet quantity.
 
-![Annual production capacity across the four scenarios](assets/production-capacity.png)
+The relocated layout reached its highest tested output with four fewer pallets, while its peak output was lower. The study supports a pallet recommendation for either layout. Choosing between layouts also requires the production requirement, implementation costs and other operational considerations.
 
-[Read the case study: problem, method, results and recommendation](projects/capacidade-linha-montagem.md)
+![Estimated annual production capacity for the tested pallet quantities and scenarios](assets/production-capacity.png)
 
-## Operational Questions
+**[Read the case study](projects/capacidade-linha-montagem.md)** · **[View the result data](data/capacity-scenarios.csv)** · **[Reproduce the figures](scripts/README.md)**
 
-| Question | Analysis presented |
+## Industrial decisions addressed
+
+| Decision | What the published case provides |
 |---|---|
-| How much can the line produce? | Capacity under defined layout and availability assumptions |
-| How many pallets should circulate? | Output across a range of pallet quantities, including behaviour near the maximum |
-| What changes when a station is relocated? | Comparison at equal pallet quantities and at each layout's highest output |
-| How does availability affect the decision? | Sensitivity of capacity and pallet recommendations to operating assumptions |
+| Select a circulating pallet quantity | Capacity comparisons over the tested range |
+| Assess a layout alternative | Comparisons at equal pallet quantities and at each layout's best tested output |
+| Examine availability assumptions | Results under two operating assumptions |
+| Interpret the recommendation | Sensitivity around the reported peaks and explicit evidence limits |
 
-## Work Demonstrated
+## Work presented
 
-| Area | Work covered |
-|---|---|
-| Model development | Representation of processing operations, routes and pallet progression rules in WITNESS |
-| Input preparation | Organisation of operation parameters, availability assumptions and routes in Excel |
-| Experiment design | Structured comparison of layouts, availability scenarios and pallet quantities |
-| Result analysis | Capacity charts, scenario tables, sensitivity calculations and conditional recommendations |
+- Process modelling and pallet-flow logic in WITNESS 26, as described in the case study.
+- Organisation of operating assumptions and process information in Excel.
+- Structured comparisons of alternative operating configurations.
+- Python figures and derived comparisons based on the published CSV results.
 
-The case includes the reported results, their operational interpretation and the limits of the available evidence. A [CSV dataset](data/capacity-scenarios.csv) and [figure reproduction instructions](scripts/README.md) accompany the charts.
+## Evidence and interpretation
 
----
+The company information used in this case is shared with permission. The figures present simulation estimates, and the case study describes the evidence available and the outstanding checks concerning model configuration, execution settings and annualisation. Post-implementation production improvements and savings have not been established in the published material.
 
-**Publication status:** Local working draft. Numerical results still reflect the source study. A public demonstration requires replacement data and corresponding model executions before release.
+The accompanying Python workflow regenerates charts and comparisons from the stored CSV results. Reproducing the WITNESS experiments is a separate task requiring the model, inputs and execution settings.
+
+## Connecting simulation to business value
+
+A financial assessment would combine the operating results with demand, pallet costs, relocation costs and achievable benefits. This would support a comparison of implementation cost, annual net benefit, ROI and payback. The current case provides the capacity comparison; a numerical investment return remains to be assessed.
+
+## Contact
+
+For a discussion about production capacity, material flow or an industrial simulation study:
+
+[Connect with Eduardo Pinto on LinkedIn](https://www.linkedin.com/in/eduardopinto2407/)
