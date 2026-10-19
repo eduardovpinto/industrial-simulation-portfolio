@@ -2,7 +2,7 @@
 
 The [Python script](reproduce-figures.py) reads the [capacity dataset](../data/capacity-scenarios.csv) and recreates the two figures used in the [case study](../projects/capacidade-linha-montagem.md). It also exports the 22 comparisons between layouts at equal pallet quantities.
 
-**Scope:** Figure reproduction from 44 stored capacity values. This is not a WITNESS model execution or a verification of the underlying simulation results. The dataset still contains source-study values and is part of a local working draft.
+**Scope:** This workflow regenerates figures from 44 stored capacity observations. It does not execute WITNESS or independently validate the underlying simulation. The company information in the dataset is shared with the author's permission to publish it.
 
 ## Run
 
@@ -38,4 +38,4 @@ python scripts/reproduce-figures.py --data data/capacity-scenarios.csv --output 
 
 Each scenario contains eleven values, from 20 to 40 pallets in steps of two. Layout comparisons use `(relocated / original − 1) × 100` at matching availability and pallet quantity. Connecting lines do not imply simulations at intermediate quantities.
 
-For a public synthetic demonstration, the dataset, model executions, figures and numerical interpretation must be updated together.
+Whenever the source results are revised, update the dataset, figures and numerical interpretation together, and retain the model and execution references behind the revised results.
