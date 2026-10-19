@@ -14,7 +14,7 @@ The highest reported output occurred with **30 pallets in the original layout** 
 | Measure | Projected annual production capacity, in units/year |
 | Decision supported | Pallet sizing for either layout option |
 
-> Working draft for GitHub. Figures currently use source-study results and require a synthetic demonstration before public release. Charts were reconstructed from stored results; the WITNESS experiments were not rerun for this portfolio draft.
+> This case study uses company information that the author is authorised to share. The figures were reconstructed from stored study results. The underlying WITNESS experiments were not rerun for this portfolio edition, and the technical checks described in the evidence section remain outstanding.
 
 [Problem](#the-operational-problem) · [Method](#model-and-experiment-design) · [Results](#capacity-results) · [Sensitivity](#how-sensitive-is-the-pallet-recommendation) · [Recommendation](#recommendation-and-business-interpretation) · [Evidence](#evidence-and-reproducibility)
 
@@ -159,7 +159,7 @@ Full model validation against the physical process is not documented in the revi
 
 Run duration, time units, warm-up application, initial conditions and calendar normalisation also require confirmation for the displayed series. Replications and confidence intervals are not established. Where runs contain randomness, repeatability should be assessed; for deterministic runs, the stability of results with respect to initial conditions and measurement horizon should be checked.
 
-The conclusions identify the highest reported outputs **within the tested range**, rather than a proven global optimum. A public demonstration should use coherent synthetic inputs, corresponding WITNESS executions and a record of the configuration behind each result.
+The conclusions identify the highest reported outputs **within the tested range**, rather than a proven global optimum. Further verification should link each reported result to its model version, input data and execution configuration, with corresponding WITNESS runs where needed to resolve the outstanding checks.
 
 [Explore the 44 capacity values](../data/capacity-scenarios.csv) · [Reproduce the figures](../scripts/README.md)
 
